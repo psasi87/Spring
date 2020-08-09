@@ -1,0 +1,93 @@
+pam_tally2 --user=mesadmin --reset
+
+
+Welcome2podc@
+Welcome2bluecloud#
+
+
+sudo -u USER sh -c 'cd /home/USER'
+
+cd /opt/wp85/WebSphere/AppServer/profiles/Dmgr01/bin/
+./stopManager.sh -username soxadmin -password l0nghorn
+
+cd /opt/wp85/WebSphere/AppServer/profiles/Dmgr01/bin/stopManager.sh -username soxadmin -password l0nghorn
+
+sudo -u root -- sh -c 'whoami;cd /opt/wp85/WebSphere/AppServer/profiles/Dmgr01/bin;./StopAllJVM.sh'
+
+sudo -u root -- sh -c 'whoami;cd /opt/wp85/WebSphere/AppServer/profiles/Dmgr01/bin;./StartAllJVM.sh'
+
+
+
+
+
+
+
+
+
+
+# stoping of all server's, Nodes DMGR and IHS Server GHO/OS Patching, Secuity patching Activity
+
+#!/bin/bash
+
+#credentilas
+WAS_Console="-username soxadmin -password l0nghorn"
+
+#stopNode
+Node="./stopNode.sh $WAS_Console"
+
+#stopServer
+stop="./stopServer.sh"
+
+cd /opt/wp85/WebSphere/AppServer/profiles/BPLocator/bin;$stop BPLocator $WAS_Console;$Node;cd ../../PWPortal/bin;$stop PWPortal $WAS_Console;$Node;cd ../../AppSrv01/bin;$stop server1 $WAS_Console;$Node;cd ../../GBQT/bin;$stop GBQT $WAS_Console;$Node;cd ../../Dmgr01/bin;$stop dmgr $WAS_Console;cd /opt/IBMIHS/bin;./apachectl -k stop;cd /opt/wp85/WebSphere/AppServer/profiles/Dmgr01/bin;
+
+echo "Succussfull stoping of server's nodes, DMMGR and IHS server in SIT GZ Server "
+
+
+
+
+#!/bin/bash
+sudo -u root -- sh -c 'whoami;cd /opt/wp85/WebSphere/AppServer/profiles/Dmgr01/bin;./StartAllJVM.sh'
+
+
+
+sudo -u root -- sh -c 'whoami;cd /opt/wp85/WebSphere/AppServer/profiles/dmgr/bin/;./stopManager.sh -username soxadmin -password l0nghorn'
+
+
+
+sudo -u root -- sh -c 'cd /var/lib/jenkins/scripts;./prod_connect.sh'
+
+
+ProfileWebServiceService
+
+
+Soxadmin@aug#2020
+
+
+
+
+
+
+
+
+
+
+
+mv wstemp wstemp_0708bkp
+mv temp temp_0708bkp
+mkdir wstemp
+mkdir temp
+
+
+
+/opt/wp85/WebSphere/AppServer/profiles/GBQT/installedApps/tgwdcblue01Node01Cell
+
+
+sudharsan@22renga
+
+
+keytool -keystore /usr/bin/java/jre/lib/security/cacerts -importcert -alias soxdrgz -file /tmp/soxdrgz102.cer
+keytool -keystore /usr/bin/java/jre/lib/security/cacerts -importcert -alias DummyClientKey -file/home/jenkins/DummyClientKeyFile.jks
+
+
+keytool -list -v -keystore /usr/bin/java/jre/lib/security/cacerts| grep soxdrgz
+Caused by: [SOAPException: faultCode=SOAP-ENV:Client; msg=Unable to find a valid IP for host tgawdcline102.sl.bluecloud.ibm.com]
