@@ -1,0 +1,16 @@
+1)How many interfaces and how they are connected
+2)Need to admin activities, deploying ,in any issue on MQ,
+3)Testing responsibilities
+4)What is the use of SIT IIB server
+5)UAT Migrartion 
+
+
+EPRICER is connected through webeservice IEB
+inside the bar file are they giving DB details,if yes what
+
+What external interfaces having SSL and they configured(How SSL is happening)
+
+is they are connectivity b/w DS and IIB
+
+IIB Architecture 
+
